@@ -408,9 +408,9 @@ extractBinaries(){
 	mkdir -p $PRODUCT_HOME
 	if [ ! -f $PRODUCT_HOME/$BINARY_TAR_FILE ] || [ "$RETVAL" != "0" ]; then
 		if [ "$OS_NAME" = "FreeBSD" ]; then
-               fetch -o $PRODUCT_HOME/$BINARY_TAR_FILE "http://build.csez.zohocorpin.com/me/me_agent/webhost/bharath/May_07_2022_1/source_agent/devops.tar.gz"
+               fetch -o $PRODUCT_HOME/$BINARY_TAR_FILE "https://github.com/Bharathsanthakumar/agent/blob/main/devops.tar.gz?raw=true"
         else
-               $DOWNLOAD_CMD $PRODUCT_HOME/$BINARY_TAR_FILE "http://build.csez.zohocorpin.com/me/me_agent/webhost/bharath/May_07_2022_1/source_agent/devops.tar.gz"
+               $DOWNLOAD_CMD $PRODUCT_HOME/$BINARY_TAR_FILE "https://github.com/Bharathsanthakumar/agent/blob/main/devops.tar.gz?raw=true"
         fi
 	fi
 	cd $PRODUCT_HOME
